@@ -19,4 +19,4 @@ Please build using `franco_rosy_defconfig`
 Code Aurora Forum
 
 
-People on Github who have contributed to Android Linux Kernel
+People who have contributed to Android Linux Kernel
