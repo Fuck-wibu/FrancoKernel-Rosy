@@ -7,7 +7,7 @@ This 3.18.x kernel supports android 8, 9 and 10.
 Please build using `franco_rosy_defconfig`
 
 ## Credits
-[Sukrut](https://github.com/Sukrut4778) for his Wolf Kernel repo. This is his work, I just cherry-pick his commit.
+[Sukrut Bhagwat](https://github.com/Sukrut4778) for his Wolf Kernel repo. This is his work, I just cherry-pick his commit.
 
 
 [Francisco Franco](https://github.com/franciscofranco)
@@ -19,4 +19,4 @@ Please build using `franco_rosy_defconfig`
 Code Aurora Forum
 
 
-People who have contributed to Android Linux Kernel
+People who have contributed to Android Linux Kernel, you can see in git commit histories.
