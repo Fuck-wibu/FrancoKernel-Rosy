@@ -10,7 +10,7 @@ Please build using `franco_rosy_defconfig`
 [Sukrut Bhagwat](https://github.com/Sukrut4778) for his Wolf Kernel repo. This is his work, I just cherry-pick his commit.
 
 
-[Francisco Franco](https://github.com/franciscofranco) for his Franco K
+[Francisco Franco](https://github.com/franciscofranco) for his Franco Kernel ofc
 
 
 [nathanchance](https://github.com/nathanchance)
