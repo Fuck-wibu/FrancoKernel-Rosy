@@ -35,7 +35,6 @@
 *****************************************************************************/
 #include "../focaltech_core.h"
 #include "../focaltech_flash.h"
-#include <linux/wakelock.h>
 #include <linux/timer.h>
 
 /*****************************************************************************
@@ -46,8 +45,6 @@
 /*****************************************************************************
 * Global variable or extern global variabls/functions
 *****************************************************************************/
-struct wake_lock ft8006m_ps_lock;
-
 #define FTS_DEBUG_UPGRADE(fmt, args...) do {\
 								printk(KERN_ERR "[FTS][UPGRADE]:##############################################################################\n");\
 								printk(KERN_ERR "[FTS][UPGRADE]: "fmt"\n", ##args);\
@@ -133,10 +130,6 @@ int ft8006m_ctpm_auto_upgrade(struct i2c_client *client)
 	static int uc_ErrorTimes
 	static int uc_UpgradeTimes
 
-	wake_lock_init(&ft8006m_ps_lock, WAKE_LOCK_SUSPEND, "tp_wakelock");
-
-	wake_lock(&ft8006m_ps_lock);
-
 	/* (FTS_GET_VENDOR_ID_NUM == 0) */
 	ft8006m_g_fw_file = FT8006M_CTPM_FW;
 	ft8006m_g_fw_len = ft8006m_getsize(FW_SIZE);
@@ -158,8 +151,6 @@ int ft8006m_ctpm_auto_upgrade(struct i2c_client *client)
 
 		FTS_DEBUG_UPGRADE("upgrade %d times, error %d times!!", uc_UpgradeTimes, uc_ErrorTimes);
 	} while (uc_UpgradeTimes < (FTS_UPGRADE_TEST_NUMBER));
-
-	wake_unlock(&ft8006m_ps_lock);
 
 	return 0;
 }
