@@ -376,7 +376,7 @@ CHECKFLAGS     := -D__linux__ -Dlinux -D__STDC__ -Dunix -D__unix__ \
 		  -Wbitwise -Wno-return-void $(CF)
 CFLAGS_MODULE   =
 AFLAGS_MODULE   =
-LDFLAGS_MODULE  =
+LDFLAGS_MODULE  = --strip-debug
 CFLAGS_KERNEL	=
 AFLAGS_KERNEL	=
 CFLAGS_GCOV	= -fprofile-arcs -ftest-coverage -fno-tree-loop-im
@@ -413,6 +413,12 @@ KBUILD_CFLAGS += -w
 
 KBUILD_CFLAGS += -Wno-error=unused-but-set-variable
 # if that specific error is to be suppressed.
+
+# Device CPU specific optimization flags
+KBUILD_CFLAGS += -march=armv8-a -mtune=cortex-a53
+
+# GCC level of optimization
+KBUILD_CFLAGS += -O2
 
 KBUILD_AFLAGS_KERNEL :=
 KBUILD_CFLAGS_KERNEL :=
