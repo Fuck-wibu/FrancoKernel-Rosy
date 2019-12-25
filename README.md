@@ -16,7 +16,10 @@ Please build using `franco_rosy_defconfig`
 [nathanchance](https://github.com/nathanchance)
 
 
-Code Aurora Forum
+[Sultan Alsawaf](https://github.com/kerneltoast)
+
+
+[Greg Kroah-Hartman](https://github.com/gregkh)
 
 
 People who have contributed to Android Linux Kernel.
