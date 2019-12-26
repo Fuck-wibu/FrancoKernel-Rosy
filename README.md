@@ -1,4 +1,6 @@
-# Franco Kernel mido port for Xiaomi Redmi 5 [rosy]
+# Blast Kernel for Xiaomi Redmi 5 [rosy]
+
+# Based on Franco Kernel mido
 
 ## Android support
 This 3.18.x kernel supports android 8, 9 and 10.
