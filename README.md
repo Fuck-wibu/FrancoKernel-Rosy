@@ -1,10 +1,12 @@
-# Franco Kernel mido port for Xiaomi Redmi 5 [rosy]
+# Blast Kernel for Xiaomi Redmi 5 [rosy]
+
+## Based on Franco Kernel mido
 
 ## Android support
 This 3.18.x kernel supports android 8, 9 and 10.
 
 ## Building
-Please build using `franco_rosy_defconfig`
+Please build using `blast_rosy_defconfig`
 
 ## Credits
 [Sukrut Bhagwat](https://github.com/Sukrut4778) for his Wolf Kernel repo. This is his work, I just cherry-pick his commit.
@@ -22,4 +24,10 @@ Please build using `franco_rosy_defconfig`
 [Greg Kroah-Hartman](https://github.com/gregkh)
 
 
-People who have contributed to Android Linux Kernel.
+[Dimitar Yurukov](https://github.com/mscalindt)
+
+
+[bleedz](https://github.com/bl33dz)
+
+
+People who have contributed to Android Linux Kernel, please check commit histories.
