@@ -4,7 +4,7 @@
 This 3.18.x kernel supports android 8, 9 and 10.
 
 ## Building
-Please build using `franco_rosy_defconfig`
+Please build using `blast_rosy_defconfig`
 
 ## Credits
 [Sukrut Bhagwat](https://github.com/Sukrut4778) for his Wolf Kernel repo. This is his work, I just cherry-pick his commit.
