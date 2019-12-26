@@ -22,4 +22,10 @@ Please build using `blast_rosy_defconfig`
 [Greg Kroah-Hartman](https://github.com/gregkh)
 
 
-People who have contributed to Android Linux Kernel.
+[Dimitar Yurukov](https://github.com/mscalindt)
+
+
+[bleedz](https://github.com/bl33dz)
+
+
+People who have contributed to Android Linux Kernel, please check commit histories.
